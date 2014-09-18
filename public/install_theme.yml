@@ -1,0 +1,8 @@
+---
+content_path: install_theme.yml
+partials: {}
+index_path: index.html
+stylesheet_dir: prettyphoto
+image_dir: images
+javascript_dir: js
+no_sass: false
