@@ -18,8 +18,11 @@ class WelcomeController < ApplicationController
   if(params[:RSVP])
     ceremony = 'ceremony' if params[:ceremony]
     melse = 'melse' if params[:melse]
+    reception = 'reception' if params[:reception]
+    shower = 'shower' if params[:shower]
     attending = 'yes' if (params[:attending_yes])
     attending = 'no' if (params[:attending_no])
+    attending = 'idk' if (params[:attending_idk])
     guests = params[:guest]
     name = params[:name]
     email = params[:email]
