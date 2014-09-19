@@ -20,7 +20,6 @@ class WelcomeController < ApplicationController
     melse = 'melse' if params[:melse]
     attending = 'yes' if (params[:attending_yes])
     attending = 'no' if (params[:attending_no])
-    attending = 'maybe' if (params[:attending_idk])
     guests = params[:guest]
     name = params[:name]
     email = params[:email]
