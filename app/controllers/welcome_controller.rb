@@ -35,7 +35,7 @@ class WelcomeController < ApplicationController
       body     "Phone number: #{phone} \n Email: #{email} \n Attending: #{attending} the #{ceremony} and/or #{melse} \n Message: #{comment}"
     end
     mail.deliver!
-    redirect_to '/RSVP.html'
+    redirect_to '/rsvp.html'
   else
     name = params[:name]
     amount = params[:amount]
