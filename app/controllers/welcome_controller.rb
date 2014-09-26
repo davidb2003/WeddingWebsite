@@ -30,9 +30,9 @@ class WelcomeController < ApplicationController
     comment = params[:comment]
     mail = Mail.new do
       from     'davidandkalkidan@gmail.com'
-      to       'david.brown2003@gmail.com'
+      to       'david.brown2003@gmail.com, kalkidanbelay@gmail.com'
       subject  "#{name} RSVP'd with  #{guests} guest(s)"
-      body     "Phone number: #{phone} \n Email: #{email} \n Attending: #{attending} the #{ceremony} and/or #{melse} \n Message: #{comment}"
+      body     "Phone number: #{phone} \n Email: #{email} \n Attending: #{attending} the #{ceremony} and/or #{melse} and/or #{reception} and/or #{shower} \n Message: #{comment}"
     end
     mail.deliver!
     redirect_to '/rsvp.html'
@@ -43,7 +43,7 @@ class WelcomeController < ApplicationController
     message = params[:message]
     mail = Mail.new do
       from     'davidandkalkidan@gmail.com'
-      to       'david.brown2003@gmail.com'
+      to       'david.brown2003@gmail.com, kalkidanbelay@gmail.com'
       subject  "#{name} Pledged a  #{amount}$ donation"
       body     "Phone number: #{phone} \n Message: #{message}"
     end
